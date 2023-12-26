@@ -1,15 +1,6 @@
-# Write the code ↓ to read user's input.
-# Be cautious when reading input of various data types.
+name = input("Enter your full name: ")
+age = int(input("Enter your age: "))
+gwa = float(input("Enter your previous general weighted averag: "))
+member = bool(input("Are you a member of AWS Cloud Club? (yes/no): "))
 
-
-
-
-
-
-# Write the code ↓ to display the user's personal information.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
-
-
-
+print("\nPUP Enrollment Form\nName: %s\nAge: %d\nGWA: %.2lf\nAwstaunot: %s" % (name, age, gwa, member))
