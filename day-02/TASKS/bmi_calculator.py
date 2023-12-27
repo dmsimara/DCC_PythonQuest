@@ -1,39 +1,21 @@
-# BMI - NUTRITIONAL STATUS GUIDE
-"""
-    BMI         NUTRITIONAL STATUS
+print("\nBMI CALCULATOR FOR ALF\n")
 
-BELOW 18.5         UNDERWEIGHT
-18.5 - 24.9       NORMAL WEIGHT
-25.0 - 29.9        OVERWEIGHT
-ABOVE 30.0          OBESITY
-"""
- 
-# Write the code ↓ to read user's height and weight.
-# Be cautious when reading input of various data types.
+weight = float(input("Enter your weight in kilograms: "))
+height = float(input("Enter your height in meters: "))
 
+bmi = weight / (height ** 2)
 
-
-
-
-
-
-
-
-# Write the code ↓ to perform the calculations of user's BMI and categorize its status.
-
-
-
-
-
-
-
-# Write the code ↓ to display the user's BMI and its classification.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-# Use :.2f format specifier when printing the BMI value to display the BMI with only two decimal places.
-
-
-
-
-
-
-
+if bmi < 18.5:
+      bmi_calcu = "\nHEIGHT: %.2lf - WEIGHT: %.2lf\nBMI: %.2lf - NUTRITIONAL STATUS: underweight" % (height, weight, bmi)
+      print(bmi_calcu)
+elif bmi >= 18.5 and bmi <= 24.9: 
+      bmi_calcu = "\nHEIGHT: %.2lf - WEIGHT: %.2lf\nBMI: %.2lf - NUTRITIONAL STATUS: normal weight" % (height, weight, bmi)
+      print(bmi_calcu)
+elif bmi >= 25.9 and bmi <= 29.9:
+      bmi_calcu = "\nHEIGHT: %.2lf - WEIGHT: %.2lf\nBMI: %.2lf - NUTRITIONAL STATUS: overweight" % (height, weight, bmi)
+      print(bmi_calcu)
+elif bmi > 30.0:
+      bmi_calcu = "\nHEIGHT: %.2lf - WEIGHT: %.2lf\nBMI: %.2lf - NUTRITIONAL STATUS: obesity" % (height, weight, bmi)
+      print(bmi_calcu)
+else:
+      print("Invalid input. Try again.")
