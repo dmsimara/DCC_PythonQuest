@@ -1,22 +1,16 @@
-# Write the code ↓ to read the user's input for a non-negative integer.
-# Be cautious when reading input of various data types.
+print("\nFACTORIAL CALCULATOR FOR ALF\n")
 
 
+number = int(input("Please, enter a non-negative integer: "))
+input_number = number
+factorial = 1
+   
+if number < 0 :
+    print("Factorial is defined is defined only for non-negative integers.")
+else :
+    while number > 0 :
+        factorial *= number
+        number -= 1
 
 
-
-
-# Write the code ↓ to calculate the factorial of the user-defined integer using a loop.
-
-
-
-
-
-
-# Write the code ↓ to display the factorial result.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
-
-
-
+print("The factorial of %d is: %d" % (input_number, factorial))
