@@ -1,23 +1,15 @@
 import math
 
-# Write the code ↓ to read the radius and height of a cylinder from the user.
-# Be cautious when reading input of various data types.
+print("\nCYLINDER VOLUME CALCULATOR FOR ALF\n")
+# code to read the radius and height of a cylinder from the user.
+radius = float(input("Enter the radius of the cylinder: "))
+height = float(input("Enter the height of the cylinder: "))
 
+# calculating the volume of the cylinder using the formula V = πr^2h.
+volume = math.pi * math.pow(radius, 2) * height
 
-
-
-
-
-# Write the code ↓ to calculate the volume of the cylinder using the formula V = πr^2h.
-# Formula to calculate the volume (V) of a cylinder:
-# V = π * r^2 * h
-
-
-
-
-
-# Write the code ↓ to display the calculated volume with 2 decimal places.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
+# displaying the calculated volume with 2 decimal places.
+print("The volume of the cylinder is: %.2f" % (volume))
 
 
 
