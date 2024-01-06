@@ -1,25 +1,18 @@
-# Write the code ↓ to prompt the user to enter a word.
-# Be cautious when reading input of various data types.
+print("\nPALINDROME CHECKER FOR ALF\n")
 
+# Get the word/s to be checked from the user
+user_input = input("Enter a word/s to check: ")
+# Convert the input to lowercase for uniformity 
+word = user_input.lower()
 
+# Check if the input word is a palindrome using the string reversal
+reverse = word[::-1]
 
-
-
-
-
-# Write the code ↓ to check if the entered word is a palindrome.
-# Utilize string functions to compare the original word with its reverse.
-
-
-
-
-
-
-# Write the code ↓ to display whether the entered word is a palindrome or not.
-# Select and employ a string concatenation method based on your personal preference and comfort level.
-
-
-
-
-
+# Check if the input word is a palindrome
+if word == reverse :
+    # If the input word is a palindrome, display the message v
+    print("The word '%s' is a palindrome." % (user_input))
+else :
+    # If the input word is NOT a palindrome, display the message v
+    print("The word '%s' is NOT a palindrome." % (user_input))
 
