@@ -3,15 +3,15 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 my_info = {
-    "name": "Your Name",
-    "course_and_section": "Your course and section",
-    "favorite_programming language": "Your programming language",
-    "aws_service": "Give one AWS service you know"
+    "name": "Daniella",
+    "course_and_section": "BSIT 1-5",
+    "favorite_programming language": "Python",
+    "aws_service": "AWS DynamoDB"
 }
 
 @app.route('/', methods=['GET'])
 def get_info():
-    pass
+    return (my_info)
 
 if __name__ == '__main__':
     app.run(debug=True)
